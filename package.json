@@ -1,4 +1,5 @@
 {
+  "version": "1.0.0",
   "scripts": {
     "build": "ncc build",
     "prettier:check": "prettier --check .",
@@ -13,6 +14,5 @@
   "dependencies": {
     "@actions/core": "^1.10.0",
     "gray-matter": "^4.0.3"
-  },
-  "version": "1.0.0"
+  }
 }
