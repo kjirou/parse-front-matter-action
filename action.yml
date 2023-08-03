@@ -1,5 +1,8 @@
 name: Parse Front Matter
 description: Parse YAML Front Matter into JSON
+inputs:
+  content:
+    description: "A YAML Front Matter enabled content"
 runs:
   using: node16
   main: ./dist/index.js
