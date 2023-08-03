@@ -1,17 +1,25 @@
 on:
   workflow_dispatch:
     inputs:
-      content:
+      test_content:
+        type: choice
         required: true
+        options:
+          - markdown-only
+          - markdown-with-front-matter
 jobs:
   run-action:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - id: test_content
+        uses: juliangruber/read-file-action@v1
+        with:
+          path: ./manual-testing/${{ inputs.test_content }}.md
       - id: action
         uses: ./
         with:
-          content: ${{ inputs.content }}
+          content: ${{ steps.test_content.outputs.content }}
       - name: Debug print
         run: |
           echo 'frontMatterAsJson: ${{ steps.action.outputs.frontMatterAsJson }}'
