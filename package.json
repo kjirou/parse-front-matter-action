@@ -2,5 +2,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  }
 }
