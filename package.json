@@ -1,0 +1,20 @@
+{
+  "name": "parse-front-matter-action",
+  "version": "1.0.0",
+  "description": "A GitHub Action to parse YAML Front Matter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjirou/parse-front-matter-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kjirou/parse-front-matter-action/issues"
+  },
+  "homepage": "https://github.com/kjirou/parse-front-matter-action#readme"
+}
