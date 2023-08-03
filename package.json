@@ -1,10 +1,8 @@
 {
-  "version": "1.0.0",
   "scripts": {
     "build": "ncc build",
     "prettier:check": "prettier --check .",
-    "prettier:write": "prettier --write .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prettier:write": "prettier --write ."
   },
   "private": true,
   "devDependencies": {
